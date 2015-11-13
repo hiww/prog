@@ -7,13 +7,13 @@ void MAX_HEAPIFY(int*, int, int);
 void BUILD_MAX_HEAP(int*, int);
 
 int main(void) {
-	int i, j, n = N, tmp, A[] = {4,1,3,2,16,9,10,14,8,7};
+	int i, j, n = N, temp, A[] = {4,1,3,2,16,9,10,14,8,7};
 	for (i = 0; i < N - 1; i++) {
 		HEAPSORT(A, n);
 		n--;
-		tmp = A[0];
+		temp = A[0];
 		A[0] = A[n];
-		A[n] = tmp;
+		A[n] = temp;
 	}
 	for (j = 0; j < N; j++) {
 		printf("%d ", A[j]);
@@ -31,7 +31,7 @@ void HEAPSORT(int A[], int n) {
 }
 
 void MAX_HEAPIFY(int A[], int i, int n) {
-	int l = LEFT(i), r = RIGHT(i), largest, tmp;
+	int l = LEFT(i), r = RIGHT(i), largest, temp;
 	if (l <= n && A[l - 1] > A[i - 1]) {
 		largest = l;
 	} else {
@@ -41,9 +41,9 @@ void MAX_HEAPIFY(int A[], int i, int n) {
 		largest = r;
 	}
 	if (largest != i) {
-		tmp = A[i - 1];
+		temp = A[i - 1];
 		A[i - 1] = A[largest - 1];
-		A[largest - 1] = tmp;
+		A[largest - 1] = temp;
 		MAX_HEAPIFY(A, largest, n);
 	}
 }
