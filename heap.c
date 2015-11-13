@@ -16,7 +16,7 @@ int main(void) {
 		A[n] = tmp;
 	}
 	for (j = 0; j < N; j++) {
-		printf("%d ",A[j]);
+		printf("%d ", A[j]);
 	}
 	printf("\n");
 	return 0;
