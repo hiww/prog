@@ -1,51 +1,56 @@
-#include<stdio.h>
+#include <stdio.h>
+#define LEFT(i) (2 * i)
+#define RIGHT(i) (2 * i + 1)
 #define N 10
+void Build_Tree(int*, int);
+void Max_Heapify(int*, int, int);
+void Build_Max_Heap(int*, int);
 
-void BUILD_TREE(int n) {
-  int i;
-  Build_MAX_HEAP(n);
-  for(i = n; i < 0; i--) {
-    MAX_HEAPIY(i, n);
-  }
+int main(void) {
+	int i, j, n = N, tmp, A[] = {4,1,3,2,16,9,10,14,8,7};
+	for (i = 0; i < N - 1; i++) {
+		Build_Tree(A, n);
+		n--;
+		tmp = A[0];
+		A[0] = A[n];
+		A[n] = tmp;
+	}
+	for (j = 0; j < N; j++) {
+		printf("%d ",A[j]);
+	}
+	printf("\n");
+	return 0;
 }
-void MAX_HEAPIFY(int i, int n) {
-  int r, l, largest;
-  l = LEFT(i);
-  r = RIGHT(i);
-  if(l <= n && A[l] > A[i]) {
-        largest = l;
-    } else {
-        largest = i;
-  }
-    if(r <=n && A[r] > A[largest]) {
-        largest = r;
-    }
-    if(largest != i) {
-        int temp = A[i];
-        A[i] = A[largest];
-    A[largest] = temp;
-    MAX_HEAPIFY(largest, n);
-  }
+
+void Build_Tree(int A[], int n) {
+	int i;
+	Build_Max_Heap(A, n);
+	for (i = n; i > 0; i--) {
+		Max_Heapify(A, i, n);
+	}
 }
-void BUILD_MAX_HEAP(int n) {
-  int i;
-  for(i = n / 2; i != 0; i--) {
-    MAX_HEAPIFY(i, n);
-  }
+
+void Max_Heapify(int A[], int i, int n) {
+	int l = LEFT(i), r = RIGHT(i), largest, tmp;
+	if (l <= n && A[l - 1] > A[i - 1]) {
+		largest = l;
+	} else {
+		largest = i;
+	}
+	if (r <= n && A[r - 1] > A[largest - 1]) {
+		largest = r;
+	}
+	if (largest != i) {
+		tmp = A[i - 1];
+		A[i - 1] = A[largest - 1];
+		A[largest - 1] = tmp;
+		Max_Heapify(A, largest, n);
+	}
 }
-int main(void){
-    int i, j, n, N, temp;
-    int A[N] = {4,9,3,11,87,7,5,1,12,23};
-        for(i = 0; i < N - 1; i++) {
-            BUILD_TREE(n);
-            n--;
-            temp = A[0];
-            A[0] = A[n];
-            A[n] = temp;
-        }
-  for(j = 0; j < N; j++) {
-    printf("%d ",A[j]);
-  }
-  printf("\n");
-  return 0;
+
+void Build_Max_Heap(int A[], int n){
+	int i;
+	for (i = n / 2; i > 0; i--) {
+		Max_Heapify(A, i, n);
+	}
 }
