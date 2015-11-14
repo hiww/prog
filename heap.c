@@ -1,3 +1,6 @@
+/***********
+ * Heap Sort
+ * ********/
 #include <stdio.h>
 #define LEFT(i) (2 * i)
 #define RIGHT(i) (2 * i + 1)
