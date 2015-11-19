@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void swap(int* i, int* j) {
+void swap(int *i, int *j) {
 	int k;
 	k = *i;
 	*i = *j;
@@ -26,21 +26,18 @@ void QuickSort(int data[], int left, int right) {
 		y--;
 	}
 	/* 左右の要素がまだ分割可能ならソート */
-	if (left < x - 1) {
-		QuickSort(data, left, x - 1);
-	}
-	if (right > y + 1) {
-		QuickSort(data, y + 1, right);
-	}
+	if (left < x - 1) QuickSort(data, left, x - 1);
+	if (right > y + 1) QuickSort(data, y + 1, right);
 }
-int main (void) {
-	int i, n, A[] = {1, 30, 2, 11, 3, 5, 12, 0, 4, 6};
+int main(void) {
+	int i, n, N, A[] = {2, 1, 3};
 	/* 配列の長さを求める */
-	n = sizeof(A) / sizeof(int);
+	N = sizeof(A) / sizeof(int);
+	n = N;
 	/* クイックソートをする */
 	QuickSort(A, 0, n);	
 	/* 結果の表示をする */
-	for (i = 0; i < n; i++) {
+	for (i = 1; i <= N; i++) {
 		printf("%d ", A[i]);
 	}
 	printf("\n");
