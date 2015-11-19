@@ -23,7 +23,7 @@ void QuickSort(int data[], int left, int right) {
 		/* 見つけた値の入れ替え */
 		swap(&data[x], &data[y]);
 		x++;
-		y++;
+		y--;
 	}
 	/* 左右の要素がまだ分割可能ならソート */
 	if (left < x - 1) {
