@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void swap(int *i, int *j) {
 	int k;
 	k = *i;
