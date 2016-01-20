@@ -5,6 +5,7 @@ void swap(int *i, int *j) {
 	*i = *j;
 	*j = k;
 }
+
 void QuickSort(int data[], int left, int right) {
 	int x = left, y = right;
 	int base = data[(left + right) / 2];
