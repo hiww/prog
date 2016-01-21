@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 int isPrime(unsigned long long int n) {
-	unsigned long long int i, j = 0, max = sqrt(1.5 * n); //約>    数を探す上限
+	unsigned long long int i, j = 0, max = sqrt(n); //約>    数を探す上限
 	//素数は1より大きな自然数、つまり1以下は素数でない。
 	if (n <= 1) {
 		return 0;
