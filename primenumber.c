@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 int isPrime(unsigned long long int n) {
-	unsigned long long int i, max = sqrt(1.5 * n); //約数を探す上限
+	unsigned long long int i, j = 0, max = sqrt(1.5 * n); //約>    数を探す上限
 	//素数は1より大きな自然数、つまり1以下は素数でない。
 	if (n <= 1) {
 		return 0;
@@ -15,7 +15,12 @@ int isPrime(unsigned long long int n) {
 	//2以上の数に於いて約数が無いか調べる。
 	for (i = 3; i <= max; i += 2) {
 		if (n % i == 0) {
-			return 0; //割り切れた時、約数が存在する。つまり、素数ではない。
+			return 0; //割り切れた時、約数が存在する。つまり、>    素数ではない。
+		}
+		j++;
+		if (j == 3) {
+			i += 2;
+			j = 1;
 		}
 	}
 	return 1; //割り切れなければ、約数が無いので素数である。
