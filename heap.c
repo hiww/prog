@@ -1,6 +1,6 @@
 /*********
  * Heap Sort
- *******/
+ ********/
  
 #include <stdio.h>
 #define LEFT(i) (2 * i)
