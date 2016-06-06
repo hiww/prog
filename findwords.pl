@@ -1,4 +1,4 @@
-!#/usr/bin/perl -w
+#!/usr/bin/perl -w
 while(<>) {
 	chomp;
 	foreach $i (@w = split(/[^A-Za-z]+/, $_)) {
