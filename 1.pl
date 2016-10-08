@@ -8,3 +8,4 @@ while(<>) {
 foreach $w (sort{$h{$b} <=> $h{$a}} keys(%h)) {
 	say "$w $h{$w}\r";
 }
+
