@@ -1,5 +1,5 @@
 # prog
 For  my skill up.
 Hi!
-I'm studying..
+I'm studying.
 /
