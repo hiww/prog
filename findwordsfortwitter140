@@ -1,6 +1,0 @@
-while(<>) {
-	foreach $i(@w = split(/[^A-Za-z]+/, $_)) {
-		$h{lc$i}++;
-	}
-}
-print"$_ $h{$_}\r\n" foreach (sort{$h{$b} <=> $h{$a}} keys(%h));
