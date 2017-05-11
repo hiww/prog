@@ -1,7 +1,6 @@
 /***********************************
   Merge Sort
   2015. 10. 6
-  Miyagawa Shinya
   ***********************************/
 #include <stdio.h>
 #include <stdlib.h>
