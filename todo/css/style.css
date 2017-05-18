@@ -1,0 +1,85 @@
+.al {
+  background-color: #CEF6E3;
+  color: fff;
+}
+.t {
+  background-color: teal;
+  color: white;
+}
+ul {
+    margin: 15px auto 0;
+    padding: 0;
+    width: 150px;
+}
+ul li {
+    list-style-type: none;
+    font-size: 24px;
+    margin-bottom: 5px;
+    background-color: #A9E2F3;
+    text-align: left;
+    cursor: move;
+}
+ul li span {
+    cursor: text;
+}
+ul li a:link {
+    float: right;
+    color: #111;
+    display: none;
+}
+input[type="text"] {
+    height: 20px;
+    width: 150px;
+    font-size: 18px;
+    margin-right: 10px;
+
+}
+input[type="submit"] {
+    height: 38px;
+    font-size: 16px;
+}
+.refreshbtn {
+    font-size: 18px;
+	position: relative;
+	z-index: 2;
+	background-color: #CEF6E3;
+	font-weight: bold;
+	color: #fff;
+	line-height: 5px;
+}
+.refreshbtn:hover {
+	background-color: #fff;
+	border-color: #59b1eb;
+	color: #59b1eb;
+}
+.refreshbtn::before,
+.refreshbtn::after {
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background-color: #333;
+}
+.refreshbtn::before {
+	top: 0;
+}
+.refreshbtn::after {
+	bottom: 0;
+}
+.refreshbtn:hover::before,
+.refreshbtn:hover::after {
+	height: 0;
+	background-color: #59b1eb;
+}
+h1{
+    position: relative;
+    color: #fff;
+    background: #81F7BE;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    padding: 0.3em;
+    box-shadow: 0 1px 3px #777;
+    -moz-box-shadow: 0 1px 3px #777;
+    -webkit-box-shadow: 0 1px 3px #777;
+    -o-box-shadow: 0 1px 3px #777;
+    -ms-box-shadow: 0 1px 3px #777;
+}
