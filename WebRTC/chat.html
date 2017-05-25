@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/peer.js"></script>
+  <script type="text/javascript" src="js/sp.js"></script>
+  <script>
+    var conn;
+    var peer = new Peer({key: '/* Replace your API-Key. */', debug: true});
+    peer.on('open', function(id) {
+      $('#pid').text(id);
+    });
+    peer.on('connection', connect);
+    function connect(c) {
+      $('#chat_area').show();
+      conn = c;
+      $('#messages').empty().append('Now chatting with ' + conn.peer);
+
+      conn.on('data', function(data) {
+        $('#messages').append('<br>' + conn.peer + ':<br>' + data);
+      });
+      conn.on('close', function(err){ alert(conn.peer + ' has left the chat.') });
+    }
+    $(document).ready(function() {
+      $('#connect').click(function() {
+        var c = peer.connect($('#rid').val());
+        c.on('open', function() {
+          connect(c);
+        });
+        c.on('error', function(err){ alert(err)
+        });
+      });
+
+      $('#send').click(function() {
+        var msg = $('#text').val();
+        conn.send(msg);
+        $('#messages').append('<br>You:<br>' + msg);
+        $('#text').val('');
+      });
+      $('#browsers').text(navigator.userAgent);
+    });
+
+  </script>
+</head>
+<body>
+
+  自分: <span id="pid"></span><br><br>
+  接続先: <input type="text" id="rid" placeholder="Input id">
+  <input type="button" value="Connect" id="connect"><br><br>
+  <div id="chat_area" style="display: none;">
+    <div id="messages"></div>
+    <input type="text" id="text" placeholder="Text here">
+    <input type="button" value="Send" id="send">
+    <br />
+    <input type="button" value="Start" onclick="recognition3.start();"/>
+    <input type="button" value="Pause" onclick="recognition3.stop();"/>
+    <div id="recognizedText3"></div>
+  </div>
+</body>
+</html>

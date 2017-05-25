@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/peer.js"></script>
+    <script type="text/javascript" src="js/videochat.js"></script>
+</head>
+<body>
+    <div>
+        <video id="my-video" style="width: 500px;" autoplay></video>
+        <video id="peer-video" style="width: 500px;" autoplay></video>
+    </div>
+    <div>
+        <p>自分: <span id="my-id">-</span></p>
+        <p>相手: <span id="peer-id">-</span></p>
+    </div>
+    <div>
+        <input type="text" placeholder="ID" id="peer-id-input">
+        <button id="call-start">Start</button>
+        <button id="call-end">Stop</button>
+    </div>
+</body>
+</html>
