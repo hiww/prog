@@ -1,0 +1,59 @@
+<HTML>
+<HEAD>
+<TITLE>宿泊予約フォーム</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</HEAD>
+
+<BODY BGCOLOR="PINK">
+
+<FORM METHOD="POST" ACTION="confirm.cgi">
+
+<H1 ALIGN=CENTER>宿泊予約フォーム</H1>
+
+<H2>お客様のお名前と御連絡先</H2>
+
+<table>
+<tr><td>氏名</td><td><INPUT TYPE="TEXT" NAME="yourname"></td></tr>
+<tr><td>電話番号</td><td><INPUT TYPE="TEXT" NAME="phone"></td></tr>
+<tr><td>メールアドレス</td><td><INPUT TYPE="TEXT" NAME="email"></td></tr>
+</table>
+
+<P>
+
+<H2>チェックインされる日・宿泊数</H2>
+
+<table>
+<tr><td>チェックイン（yyyy/mm/dd）</td><td><INPUT TYPE="TEXT" NAME="date" VALUE="2015/08/14"></td></tr>
+<tr><td>宿泊数（1泊以上を指定）</td><td><INPUT TYPE="TEXT" NAME="stay" VALUE="1"></td></tr>
+</table>
+
+<P>
+
+<H2>御予約される部屋の種類</H2>
+
+<H3>以下のお部屋から選択してください（お部屋あたり一泊料金）</H3>
+
+<INPUT TYPE="RADIO" NAME="q1" VALUE="a1" CHECKED> シングル（7,000円） <BR>
+<INPUT TYPE="RADIO" NAME="q1" VALUE="a2"> ツイン（12,000円） <BR>
+<INPUT TYPE="RADIO" NAME="q1" VALUE="a3"> ダブル（15,000円） <BR>
+<INPUT TYPE="RADIO" NAME="q1" VALUE="a4"> デラックスツイン（21,000円） <BR>
+<INPUT TYPE="RADIO" NAME="q1" VALUE="a5"> スイート（35,000円） <BR>
+
+<P>
+
+<H3>禁煙ルームをご希望の場合、以下から選択してください</H3>
+
+<INPUT TYPE="RADIO" NAME="q2" VALUE="a1"> 禁煙ルームを希望<BR>
+<INPUT TYPE="RADIO" NAME="q2" VALUE="a2" CHECKED> どちらでもよい <BR>
+
+<P>
+
+<INPUT TYPE="SUBMIT" VALUE="送信">
+<P>
+<INPUT TYPE="RESET" VALUE="リセット">
+
+</FORM>
+
+</BODY>
+</HTML>
+	
