@@ -1,0 +1,23 @@
+# Version: 11.10.1.178 (d15-7: 408d3574)
+# [first argument, ignore] # --cache=/Users/mb/Projects/First_iOS-app/First_iOS-app/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-cache
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.10.1.178/lib/mtouch/mtouch.exe \
+	--sim=/Users/mb/Projects/First_iOS-app/First_iOS-app/bin/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/First_iOS-app.app \
+	--executable=First_iOS-app \
+	--debug \
+	--profiling \
+	--nolink \
+	--sdkroot=/Applications/Xcode.app/Contents/Developer \
+	--sdk=11.3 \
+	--targetver=11.0 \
+	--aot-options=-O=-float32 \
+	--http-message-handler=HttpClientHandler \
+	--abi=x86_64 \
+	--symbollist=/Users/mb/Projects/First_iOS-app/First_iOS-app/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/mtouch-symbols.list \
+	--dsym=no \
+	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	'--target-framework=Xamarin.iOS,v1.0' \
+	--root-assembly=/Users/mb/Projects/First_iOS-app/First_iOS-app/bin/iPhoneSimulator/Debug/First_iOS-app.exe \

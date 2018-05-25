@@ -1,0 +1,12 @@
+/Users/mb/Projects/First_iOS-app/First_iOS-app/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/ibtool/_BundleResourceWithLogicalName.items
+/Users/mb/Projects/First_iOS-app/First_iOS-app/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/actool/_PartialAppManifest.items
+/Users/mb/Projects/First_iOS-app/First_iOS-app/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/actool/_BundleResourceWithLogicalName.items
+/Users/mb/Projects/First_iOS-app/First_iOS-app/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/coremlc/_PartialAppManifest.items
+/Users/mb/Projects/First_iOS-app/First_iOS-app/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/coremlc/_BundleResourceWithLogicalName.items
+/Users/mb/Projects/First_iOS-app/First_iOS-app/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.3/optimized/
+/Users/mb/Projects/First_iOS-app/First_iOS-app/obj/iPhoneSimulator/Debug/First_iOS-app.csprojResolveAssemblyReference.cache
+/Users/mb/Projects/First_iOS-app/First_iOS-app/obj/iPhoneSimulator/Debug/First_iOS-app.csproj.CoreCompileInputs.cache
+/Users/mb/Projects/First_iOS-app/First_iOS-app/bin/iPhoneSimulator/Debug/First_iOS-app.exe
+/Users/mb/Projects/First_iOS-app/First_iOS-app/bin/iPhoneSimulator/Debug/First_iOS-app.pdb
+/Users/mb/Projects/First_iOS-app/First_iOS-app/obj/iPhoneSimulator/Debug/First_iOS-app.exe
+/Users/mb/Projects/First_iOS-app/First_iOS-app/obj/iPhoneSimulator/Debug/First_iOS-app.pdb
